@@ -1,4 +1,6 @@
-require "wanderung/version"
+# frozen_string_literal: true
+
+require 'wanderung/version'
 
 module Wanderung
   class Error < StandardError; end
