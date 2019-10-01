@@ -2,7 +2,7 @@
 
 Wanderung helps you to manage multiple migrations within the same repository
 
-It uses [Sequel](https://github.com/jeremyevans/sequel) internally to manage the migrations.
+It uses [Sequel](https://github.com/jeremyevans/sequel) internally to manage the migrations. Therefore, the same syntax is expected
 
 ## Motivation
 
@@ -52,6 +52,8 @@ Wanderung.new(database: 'artists', connection_uri: 'sqlite://artists.db').tap { 
 ```
 
 It supports all of the [adapters that Sequel supports](https://github.com/jeremyevans/sequel#sequel-the-database-toolkit-for-ruby)
+
+A simple example can be found in the test folder
 
 ## Development
 
