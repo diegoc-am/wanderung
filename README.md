@@ -29,7 +29,29 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# Simple Migration
+Wanderung.new(
+  database: 'artists', connection_uri: 'sqlite://artists.db'
+).run
+
+# Path of the folder where the migrations are is assumed from the db name, but it can also be specified
+
+Wanderung.new(
+  database: 'artists', connection_uri: 'sqlite://artists.db', path: 'my_migrations/artists'
+).run
+
+# Multiple databases can also be passed in as an array
+Wanderung.new(
+  { database: 'artists', connection_uri: 'sqlite://artists.db', path: 'my_migrations/artists' },
+  { database: 'not_artists', connection_uri: 'sqlite://not_artists.db' }
+).run
+
+# A logger can be supplied so that the migrations are logged
+Wanderung.new(database: 'artists', connection_uri: 'sqlite://artists.db').tap { |w| w.logger = Logger.new(STDOUT) }.run
+```
+
+It supports all of the [adapters that Sequel supports](https://github.com/jeremyevans/sequel#sequel-the-database-toolkit-for-ruby)
 
 ## Development
 
