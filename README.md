@@ -1,8 +1,15 @@
 # Wanderung
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/wanderung`. To experiment with that code, run `bin/console` for an interactive prompt.
+Wanderung helps you to manage multiple migrations within the same repository
 
-TODO: Delete this and the text above, and describe your gem
+It uses [Sequel](https://github.com/jeremyevans/sequel) internally to manage the migrations.
+
+## Motivation
+
+As part of a project that we were working on, we had to orchestrate multiple databases, whenever these started to grow,
+it became troublesome to have to run several migrations for the micro-services to work together properly.
+
+We wanted to have all of our migrations in a single place, run a single command and have them all executed.
 
 ## Installation
 
@@ -32,4 +39,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/wanderung.
+Bug reports and pull requests are welcome on GitHub at https://github.com/belfazt/wanderung.
