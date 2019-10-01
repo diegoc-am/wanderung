@@ -13,8 +13,6 @@ Gem::Specification.new do |spec|
   spec.summary       = 'Wanderung allows you to manage several migrations for several SQL databases'
   spec.homepage      = 'https://github.com/belfazt/wanderung'
 
-  spec.metadata['allowed_push_host'] = 'http://rubygems.org'
-
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/belfazt/wanderung'
   spec.metadata['changelog_uri'] = 'https://github.com/belfazt/wanderung/blob/master/CHANGELOG.md'
